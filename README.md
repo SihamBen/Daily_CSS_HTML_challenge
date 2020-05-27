@@ -4,3 +4,4 @@ I challenged myself to create beautiful UI elements inspired by UI Design Daily 
 
 - Day1: CSS Grid with shared background effect
 - Day2: Landing Page
+- Day3: Carousel

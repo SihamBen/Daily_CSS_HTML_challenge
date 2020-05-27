@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, white, #fdf9c4);
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+.slider {
+  width: 400px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: #4cb6de;
+    border-radius: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+.slides > div {
+  flex-shrink: 0;
+  width: 400px;
+  height: 400px;
+  padding: 20px 20px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px -6px white;
+
+  background: #4cb6de;
+
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  font-size: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+p {
+  z-index: 1;
+}
+.slides > div:before {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  content: "„";
+  font-family: Arial;
+  font-size: 250px;
+  color: #6ac2e3;
+
+  line-height: 35px;
+  top: 40px;
+  left: 15px;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #4cb6de;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 15px 0 0.5rem 0;
+  position: relative;
+  border: 2px solid white;
+  box-shadow: 0px 5px 10px -4px white;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: white;
+  color: #74abe2;
+}
