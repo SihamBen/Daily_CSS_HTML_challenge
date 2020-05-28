@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity=""
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ads manager</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-bar">
+        <input type="search" placeholder="Search ads" />
+        <button id="filter-button">Filters</button>
+      </div>
+      <table>
+        <thead>
+            <tr>
+          <th>Name</th>
+          <th>Clicks</th>
+          <th>Priority</th>
+          <th>Impressions</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr class="priority-200">
+            <td>Shure SE110 in-ear headphones</td>
+            <td>854</td>
+            <td><span class="bg-200"></span> 200</td>
+            <td>
+              190 <button id="delete"><i class="far fa-trash-alt"></i></button>
+            </td>
+          </tr>
+          <tr class="priority-600">
+            <td>Our favorite iPhone solution</td>
+            <td>620</td>
+            <td><span class="bg-600"></span> 600</td>
+            <td>
+              478<button id="delete"><i class="far fa-trash-alt"></i></button>
+            </td>
+          </tr>
+          <tr class="priority-300">
+            <td>Audio jack for connecting to your own headphones</td>
+            <td>500</td>
+            <td><span class="bg-300"></span> 300</td>
+            <td>
+              322<button id="delete"><i class="far fa-trash-alt"></i></button>
+            </td>
+          </tr>
+          <tr class="priority-200">
+            <td>Memory-foam tips</td>
+            <td>430</td>
+            <td><span class="bg-200"></span> 200</td>
+            <td>
+              197<button id="delete"><i class="far fa-trash-alt"></i></button>
+            </td>
+          </tr>
+          <tr class="priority-300">
+            <td>Cables over the tops</td>
+            <td>170</td>
+            <td><span class="bg-300"></span> 300</td>
+            <td>
+              289<button id="delete"><i class="far fa-trash-alt"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button id="add-button">+</button>
+    </div>
+  </body>
+</html>
