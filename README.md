@@ -6,3 +6,4 @@ I challenged myself to create beautiful UI elements inspired by UI Design Daily 
 - Day2: Landing Page
 - Day3: Carousel
 - Day4: Ads Manager
+- Day5: a responsive finish button
