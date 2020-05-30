@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #b4abae;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #b4abae;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+ul > li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+}
+nav {
+  width: 100%;
+  padding: 20px 40px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(228, 226, 226);
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+#logo {
+  border-radius: 50%;
+  color: cornflowerblue;
+  background-color: white;
+  padding: 10px 5px;
+  border: 1px solid #b4abae;
+}
+
+#sign-in-button,
+#sign-up-button {
+  font-family: inherit;
+  border: none;
+  background-color: white;
+  padding: 7px 12px;
+  color: black;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+}
+#sign-up-button {
+  background-color: #f0ebf0;
+  border-radius: 5px;
+}
+
+#sign-in-button:hover,
+#sign-up-button:hover {
+  opacity: 0.6;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 40px;
+}
+i {
+  color: black;
+}
+.switch-button {
+  border: none;
+  background-color: #f0ebf0;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+  outline: none;
+  display: inline-block;
+}
+
+.switch-button:hover {
+  background-color: rgb(68, 168, 250);
+  transform: scale(1.2);
+}
+.switch-button:hover i {
+  color: white;
+}
+h1 {
+  color: black;
+  font-size: 45px;
+  margin-top: 12px;
+}
+.header > div:nth-child(2) {
+  line-height: 25px;
+  width: 250px;
+  font-weight: 400;
+  color: #8f8c8d;
+}
+
+.collection {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.genre {
+  width: 100%;
+  height: 250px;
+  overflow-x: auto;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  left: -100%
+
+}
+.genre::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+
+}
+.genre::-webkit-scrollbar-thumb {
+  background: rgb(206, 206, 206);
+  border-radius: 10px;
+
+}
+.genre::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+img {
+  height: 100%;
+  width: 230px;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 5px;
+  margin: 0 10px;
+  box-orient: horizontal;
+}
+
+
+#view {
+  font-family: inherit;
+  border: none;
+  background-color: rgb(231, 211, 29);
+  padding: 7px 25px;
+  color: black;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+  border-radius: 5px;
+}
+.view {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
