@@ -8,5 +8,6 @@ I challenged myself to create beautiful UI elements inspired by UI Design Daily 
 - Day4: Ads Manager
 - Day5: a responsive finish button
 - Day6: A design site landing page
-- Day7: A candle
-- Day8: A Ruby
+- Day7:  candle
+- Day8:  Ruby
+- Day9: Book 
