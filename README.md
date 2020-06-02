@@ -9,3 +9,4 @@ I challenged myself to create beautiful UI elements inspired by UI Design Daily 
 - Day5: a responsive finish button
 - Day6: A design site landing page
 - Day7: A candle
+- Day8: A Ruby

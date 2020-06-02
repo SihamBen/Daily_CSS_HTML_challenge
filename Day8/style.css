@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  width: 180px;
+  height: 140px;
+  left: 40%;
+  top: 100px;
+  
+
+overflow: hidden;
+
+}
+.ruby {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 40px solid #BC0E0E;
+  left:60px;
+ 
+}
+.top-right {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 40px solid #F58181;
+  overflow: hidde;
+}
+.top-right-right {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 40px solid #B90B0C;
+  left: 30px;
+}
+.top-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 40px solid #DC2323;
+    left:-60px;
+  }
+  .top-left-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid #9E0707;
+    left: -90px;
+  }
+  .bottom-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 100px solid #C81718;
+    transform: skew(-31deg);
+    left: 0px;
+    top: 40px;
+    
+  }
+  .bottom-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 100px solid #890505;
+    transform: skew(31deg);
+    left: -60px;
+    top: 40px;
+  }
+  .bottom-middle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 100px solid #A51012;
+   
+    left: -30px;
+    top: 40px;
+  }
+  .flash {
+    position: absolute;
+    width: 4px;
+    height: 42px;
+    top: -60px;
+    left: 8px;
+    background: rgb(255, 255, 255);
+    transform: rotate(-37deg) translateX(-30px);;
+    animation: flash 3s linear infinite both;
+    box-shadow: 0 0 5px 0 rgb(255, 255, 255);
+}
+
+
+@keyframes flash {
+    0% {
+        transform: rotate(-37deg) translateX(-25px);
+       
+    }
+    10%, 100% {
+        transform: rotate(-37deg) translateX(20px);
+       
+    }
+}
