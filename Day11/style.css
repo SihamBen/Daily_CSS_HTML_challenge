@@ -1,0 +1,97 @@
+.frame {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  left: 35%;
+}
+.body {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 50px;
+  height: 120px;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 19, 228, 1) 0%,
+    rgba(72, 164, 198, 1) 100%
+  );
+  border-bottom-right-radius: 70px;
+  border-top-left-radius: 70px;
+}
+.face {
+  position: absolute;
+  height: 50px;
+  width: 25px;
+  background-color: white;
+  box-shadow: inset 3px 3px rgb(231, 231, 231);
+  border-radius: 30px 0 0 30px;
+  left: 25px;
+
+  
+}
+.face:after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 25px;
+  background: linear-gradient(to bottom, #1e1e1e 0%, #4f4f4f 100%);
+  border-radius: 0 30px 30px 0;
+  left: 25px;
+  z-index: -2;
+}
+ span{
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 100%;
+  top: 12px;
+  left: 10px;
+}
+.face::before{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  box-shadow: 20px 18px 0 0 #DB220A;
+  top: 26px;
+  left: -5px;
+  transform: rotate(-121deg);
+z-index: -1;
+}
+
+.wings {
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  background: linear-gradient(
+    0deg,
+    rgba(168, 11, 216, 1) 0%,
+    rgba(20, 19, 228, 1) 100%
+  );
+  border-radius: 0 35px 35px 0;
+  top: 50px;
+  opacity: 0.8;
+}
+div:nth-of-type(3) {
+  transform: rotate(20deg);
+  left: -13px;
+}
+div:nth-of-type(4) {
+  transform: rotate(40deg);
+
+  left: -27px;
+}
+div:nth-of-type(5) {
+  transform: rotate(60deg);
+  left: -39px;
+  top: 43px;
+}
+div:nth-of-type(6) {
+  transform: rotate(80deg);
+
+  left: -49px;
+  top: 34px;
+}
