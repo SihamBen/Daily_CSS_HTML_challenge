@@ -11,3 +11,4 @@ I challenged myself to create beautiful UI elements inspired by UI Design Daily 
 - Day7:  candle
 - Day8:  Ruby
 - Day9: Book 
+- Day10: pricing page

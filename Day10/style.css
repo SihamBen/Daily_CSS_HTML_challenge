@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Open + Sans:400, 600, 700");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #5e5e5e;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(bottom, rgb(1, 79, 102) ,rgba(253, 250, 250, 0.699) );
+}
+.container {
+  display: flex;
+  width: 700px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+p {
+  text-align: center;
+  line-height: 22px;
+color: rgb(240, 236, 236);
+  flex-basis:100%;
+  font-size: 14px;
+ 
+}
+#title{
+  color: white;
+}
+.card {
+  
+  cursor: pointer;
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+}
+h3 {
+  background-color: #7dd0ed;
+  height: 40px;
+  width: 100%;
+  padding-top: 10px;
+  border-radius: 5px 5px 0 0;
+  color: white;
+}
+h1 {
+  padding: 10px;
+}
+.lines {
+  margin-top:20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.line {
+  background-color: rgba(218, 214, 214, 0.534);
+  height: 5px;
+  border-radius: 2px;
+  margin: 5px;
+}
+.plans {
+  display: flex;
+  flex-direction: column;
+  flex-basis:200px;
+  margin-top: 20px;
+  flex-shrink: 0;
+}
+.plan {
+  margin: 5px 0;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.progress {
+  width: 400px;
+  height: 10px;
+  border-radius: 5px;
+  background: rgba(218, 214, 214, 0.534);
+  position: relative;
+}
+.progress::before {
+  content: "";
+  position: absolute;
+  background-color: #7dd0ed;
+  height: 100%;
+  width: 0;
+  transition: all 0.3s ease;
+  border-radius: 5px ;
+}
+
+.card:hover {
+  transform: scale(1.09);
+}
+.card:hover h3{
+background:#49a8ca;
+}
+.basic:hover ~ .plans .users .progress::before {
+  width: 10%;
+}
+.basic:hover ~ .plans .gb .progress::before {
+  width: 10%;
+}
+.basic:hover ~ .plans .projects .progress::before {
+  width: 10%;
+}
+.pro:hover ~ .plans .users .progress::before {
+  width: 40%;
+}
+.pro:hover ~ .plans .gb .progress::before {
+  width: 50%;
+}
+.pro:hover ~ .plans .projects .progress::before {
+  width: 40%;
+}
+.premium:hover ~ .plans .users .progress::before {
+  width: 100%;
+}
+.premium:hover ~ .plans .gb .progress::before {
+  width: 100%;
+}
+.premium:hover ~ .plans .projects .progress::before {
+  width: 100%;
+}
