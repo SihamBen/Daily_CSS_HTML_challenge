@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity=""
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CRM App dashboard</title>
+  </head>
+  <body>
+    <nav>
+     
+      <button id="request-button">Request for</button>
+      <ul>
+        <li><i class="fas fa-columns"></i>
+          <a href="#">Dashboard</a>
+        </li>
+        <li><i class="fas fa-users"></i>
+          <a href="#">People</a>
+        </li>
+        <li><i class="fas fa-hand-holding-usd"></i>
+          <a href="#">Finance</a>
+        </li>
+        <li><i class="fas fa-chart-bar"></i>
+          <a href="#">Statistics</a>
+        </li>
+        <li><i class="fas fa-file-alt"></i>
+          <a href="#">Documents</a>
+        </li>
+        <li><i class="far fa-calendar-alt"></i>
+          <a href="#">Calendar</a>
+        </li>
+      </ul>
+   
+      <button id="support-button"><i class="far fa-life-ring"></i>support</button>
+      <button id='off-button'><i class="fas fa-power-off"></i></button></div>
+    </nav>
+    <header>
+      <div class="search">
+        <i class="fas fa-search"></i>
+
+        <input type="search" />
+      </div>
+      <div class="current-user">
+      <span>05/06/2020</span>
+      <button class="notif"><i class="far fa-bell " ></i></button>
+      <span>Siham Ben Daia</span>
+      <div class="current-user-avatar"></div>
+      <button><i class="fas fa-angle-down"></i></button>
+    </div>
+     
+    </header>
+    <div class="main-content">
+     <h1>People</h1>
+     <div class="search">
+      <i class="fas fa-search"></i>
+     <input type="text" placeholder="Search by name">
+    </div>
+     <ul><li>All</li>
+<li>Organization</li>
+     </ul>
+     <div class="search-options">
+<div class="select-team"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i><select><option>Design Team</option></select></div>
+<div class="select-position"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i><select><option>Position</option></select></div>
+<div class="select-more"><select><option>More</option></select></div>
+<div class="select-all">
+<i class="fas fa-sort-down"></i>
+<label>Sort by:</label>
+<select><option>All</option></select>
+</div>
+<div class='display-mode'>
+  <label class='mode'>
+  <input type="radio" id="mode1" name="display-mode" >
+  <i class="fas fa-bars"></i>
+</label>
+<label class='mode'>
+  <input type="radio" id="mode1" name="display-mode" >
+  <i class="fas fa-th"></i></label>
+</div>
+<div class="team-members">
+  <div>
+    <button><i class="fas fa-ellipsis-v"></i></button>
+    <div class="avatar" style="background-image: url(avatar5.jpg);"></div>
+   
+    <h1>Ioan Gruffudd</h1>
+    <h3>Ioan.Gruffudd@gmail.com</h3>
+    <div class="time">
+      <i class="far fa-clock"></i>
+      <progress max="100" value="100" ></progress>
+      <progress max="100" value="100" ></progress>
+      <progress max="100" value="50" ></progress>
+      <span>80%</span>
+    </div>
+    <h2>CREATIVE DIRECTOR</h2>
+
+  </div>
+  <div>
+    <button><i class="fas fa-ellipsis-v"></i></button>
+    <div class="avatar" style="background-image: url(avatar2.jpg);"></div>
+    <h1>Andrew Hozier</h1>
+    <h3>Andrew.Hozier@gmail.com</h3>
+    <div  class="time">
+      <i class="far fa-clock"></i>
+      <progress max="100" value="100" ></progress>
+      <progress max="100" value="100" ></progress>
+      <progress max="100" value="0" ></progress>
+      <span>66%</span>
+    </div>
+    <h2>SENIOR ART DIRECTOR</h2>
+
+  </div>
+  <div >
+    <button><i class="fas fa-ellipsis-v"></i></button>
+    <div class="avatar" style="background-image: url(avatar4.jpg);"></div>
+    <h1>alexander skarsgård</h1>
+    <h3>alexander.skarsgård@gmail.com</h3>
+    <div class="time">
+      <i class="far fa-clock"></i>
+      <progress max="100" value="100" ></progress>
+      <progress max="100" value="50" ></progress>
+      <progress max="100" value="0" ></progress>
+      <span>50%</span>
+    </div>
+    <h2> ART DIRECTOR</h2>
+
+  </div>
+  <div>
+    <button ><i class="fas fa-ellipsis-v"></i></button>
+    <div class="avatar" style="background-image: url(avatar1.jpg);"></div>
+
+    <h1>matthew mcconaughey</h1>
+    <h3>matthew.mcconaugheyp@gmail.com</h3>
+    <div  class="time">
+      <i class="far fa-clock"></i>
+      <progress max="100" value="100" ></progress>
+      <progress max="100" value="100" ></progress>
+      <progress max="100" value="70" ></progress>
+      <span>87%</span>
+    </div>
+    <h2>SENIOR UX DTSIGNER</h2>
+
+  </div>
+  <div>
+    <button><i class="fas fa-ellipsis-v"></i></button>
+    <div class="avatar" style="background-image: url(avatar3.jpg);"></div>
+    <h1>Thomas Shelby</h1>
+    <h3>henry.p@gmail.com</h3>
+    <div  class="time">
+      <i class="far fa-clock"></i>
+      <progress max="100" value="100" ></progress>
+      <progress max="100" value="100" ></progress>
+      <progress max="100" value="10" ></progress>
+      <span>71%</span>
+    </div>
+    <h2>SENIOR COPYWRITER</h2>
+
+  </div>
+  <div>
+    <button><i class="fas fa-ellipsis-v"></i></button>
+    <div class="avatar" style="background-image: url(avatar6.jpg);"></div>
+    <h1>Anthony Hopkins</h1>
+    <h3>Anthony.Hopkins@gmail.com</h3>
+    <div  class="time">
+      <i class="far fa-clock"></i>
+      <progress max="100" value="100" ></progress>
+      <progress max="100" value="100" ></progress>
+      <progress max="100" value="100" ></progress>
+      <span>100%</span>
+    </div>
+    <h2>SENIOR CREATIVE DIRECTOR</h2>
+
+  </div>
+
+
+</div>
+     </div>
+    </div>
+    <div class="content">
+      <div class="team">
+      <span>SELECTED</span>
+      <h3>Design team</h3>
+    </div>
+    <div class="projects-progress">
+      <button><i class="fas fa-cog"></i></button>
+      <div class="progress-circle">
+        <button><i class="fas fa-angle-left"></i></button>
+      <div class="time-log">
+<svg  width="140" height="140">
+  <circle cx="70" cy="70" r="70"/>
+  <circle cx="70" cy="70" r="55" stroke="white" stroke-width="5" fill="none" />
+  <circle cx="70" cy="70" r="55"  stroke-width="5" fill="none" />
+  <circle cx="70" cy="70" r="40"  stroke-width="5" fill="white" />
+  <circle cx="70" cy="70" r="30"  stroke-width="1" fill="none" />
+</svg>
+<div class="number"><h3>TIME LOG</h3><h1>74%</h1> </div>
+      </div>
+      <button><i class="fas fa-angle-right"></i></button>
+    </div>
+      <h3>Projetcs</h3>
+      <div class="projects">
+        <div ><h3>TOTAL</h3><h1>248</h1></div>
+        <div><h3>COMPLETED</h3><h1>56</h1></div>
+        <div><h3>IN PROGRESS</h3><h1>76</h1></div>
+        <div><h3>WAITING</h3><h1>16</h1></div>
+      </div>
+    </div>
+      <div class="messaging">
+        <div class="box">
+      <button><i class="fas fa-comment-alt"></i></button>
+      <div>
+        <h3>DECLARATION CENTER</h3>
+        <h1>Internal messages</h1>
+      </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
