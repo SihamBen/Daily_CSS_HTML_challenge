@@ -1,0 +1,58 @@
+div {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  background-image: 
+    linear-gradient(
+      to top,
+      rgb(253, 230, 211) 25%,
+      transparent 25%
+    ),
+    linear-gradient(to bottom, rgb(253, 230, 211) 25% ,transparent 25%),
+    linear-gradient(to right, transparent 25% ,rgb(163, 4, 4) 25% , rgb(235, 22, 22) 28%, transparent 28%),
+    linear-gradient(to right, transparent 30% ,rgb(2, 2, 133) 30% , rgb(71, 71, 255) 32%, transparent 32%),
+    linear-gradient(to right , transparent 38.2% ,rgb(37, 100, 1) 38.2% , rgb(20, 187, 61) 39.5%, transparent 39.5%),
+    linear-gradient(to right , transparent 48% ,rgb(65, 1, 65) 48% , rgb(141, 12, 145) 50%, transparent 50%),
+
+    linear-gradient(to right, transparent 60% ,rgb(0, 94, 81) 60% , rgb(3, 190, 165) 61%, transparent 61%),
+    linear-gradient(to right, transparent 61.1% ,rgb(0, 94, 81) 61.1% , rgb(3, 190, 165) 62.1%, transparent 62.1%),
+    linear-gradient(to right, transparent 62.2% ,rgb(0, 94, 81) 62.2% , rgb(3, 190, 165) 63.2%, transparent 63.2%),
+    linear-gradient(to bottom,  rgb(253, 230, 211) 30% ,transparent 30%),
+    linear-gradient(to right, transparent 28.2% ,rgb(192, 75, 7) 28.2% , rgb(228, 118, 15) 29.7%, transparent 29.7%),
+    linear-gradient(to right, transparent 32.2% ,rgb(14, 13, 13) 32.2% , rgb(100, 97, 97) 33.2%, transparent 33.2%),
+    linear-gradient(to right, transparent 63.4% ,rgb(211, 147, 29) 63.4% , rgb(211, 155, 124) 66.4%, transparent 66.4%),
+    linear-gradient(92deg , transparent 36% ,rgb(47, 4, 126) 36% , rgb(78, 8, 206) 38%, transparent 38%),
+    linear-gradient(to bottom,  rgb(253, 230, 211) 35% ,transparent 35%),
+    linear-gradient(to right , transparent 40% ,rgb(104, 49, 3) 40% , rgb(145, 72, 12) 44%, transparent 44%),
+    linear-gradient(to right , transparent 56.8% , rgb(4, 92, 1) 56.8% , rgb(9, 184, 3) 59.8%, transparent 59.8%),
+    linear-gradient(to right, transparent 66.6% ,rgb(192, 7, 7) 66.6% , rgb(145, 12, 12) 68%, transparent 68%),
+    linear-gradient(to bottom,  rgb(253, 230, 211) 40% ,transparent 40%) ,
+    linear-gradient(to right , transparent 50.2% ,rgb(162, 165, 6) 50.2% , rgb(245, 248, 82) 55%, transparent 55%),
+    linear-gradient(92deg , transparent 46% ,rgb(3, 64, 143) 46% , rgb(29, 78, 238) 47.9%, transparent 47.9%)
+, linear-gradient(to bottom,  rgb(253, 230, 211) 75% ,transparent 75%)
+    ;
+   
+}
+div:before{
+    content:'';
+    position: absolute;
+    top:75%;
+    left: 12%;
+    height: 8%;
+    width: 70%;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgb(87, 35, 0) 40% ,rgb(104, 42, 1) );
+}
+div:after{
+    content:'';
+    position: absolute;
+    top:83%;
+    left: 12%;
+    height: 6%;
+    width: 70%;
+    border-radius: 5px;
+    background: linear-gradient(to right, transparent 20% ,rgb(104, 42, 1) 20% 25% , transparent 25% 75%, rgb(104, 42, 1) 75% 80%, transparent
+    80%);
+
+}

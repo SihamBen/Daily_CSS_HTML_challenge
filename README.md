@@ -8,10 +8,11 @@ I challenged myself to create beautiful UI elements inspired by UI Design Daily 
 - Day4: Ads Manager
 - Day5: a responsive finish button
 - Day6: A design site landing page
-- Day7:  candle
-- Day8:  Ruby
-- Day9: Book 
+- Day7: candle
+- Day8: Ruby
+- Day9: Book
 - Day10: pricing page
 - Day11: Parot
 - Day12-13: CRM app dashboard
 - Day14: Scrolling text effect
+- Day15: One div book-shelf
