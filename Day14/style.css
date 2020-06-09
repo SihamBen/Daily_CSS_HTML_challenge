@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width:800px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.13);
+  background:linear-gradient(90deg,yellow 10% ,orange );
+  color: #fff;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+right: 0;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size:45px;
+    line-height: 60px;
+    height: 60px;
+   
+}   
+    
+    
+    .change_outer {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        text-align: left;
+        height: 60px;
+        overflow: hidden;
+    }
+    .change_inner {
+            position: relative;
+            animation: rotate 5s ease-in-out infinite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+     .element {
+            display: block;
+            font-weight: 700;
+            text-shadow: 2px 2px 2px orange;
+        }
+        .sun { 
+            position: absolute;
+              top: -20px;
+              width:70px;
+              height:70px;
+              border-radius:50%;	
+              background:white;
+              opacity:0.9;			
+              box-shadow: 0px 0px 40px 15px white;  
+          }
+          
+       
+@keyframes rotate {
+    0%{
+        transform: translateY(0);
+    }
+    
+    80%,100% {
+        transform: translateY(-60px);
+    }
+}
+.ray_box {
+    position: absolute;
+    margin: auto;
+      top:0px;
+      left:0;
+      right:0;
+      bottom:0;	
+    width:70px;  
+    
+  }
+  .ray {  
+      background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+          background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%); 
+      margin-left:10px;
+      border-radius:80% 80% 0 0;
+      position:absolute;
+      opacity:0.2;
+  }
+  
+  .ray1 {    
+      height:170px;
+      width:30px;
+    transform: rotate(180deg);
+      top:-170px;
+      left: 15px;
+      
+  }
+  .ray2 {
+      height:100px;
+      width:8px;
+     transform: rotate(220deg);
+      top:-90px;
+      left: 65px;
+      
+  }
+  .ray3 {
+      height:100px;
+      width:50px;
+     transform: rotate(300deg);
+      top:-50px;
+      left: -60px;
+     
+  }
+  .ray4 {
+      height:60px;
+      width:14px;
+     transform: rotate(360deg);
+     top: -30px;
+     left: -30px;
+          
+  }
+  .ray5{
+      height:60px;
+      width:14px;
+     transform: rotate(150deg);
+     top: 55px;
+     left: 55px;
+    
+          
+  }
+  
+  
+  
+ 

@@ -12,3 +12,6 @@ I challenged myself to create beautiful UI elements inspired by UI Design Daily 
 - Day8:  Ruby
 - Day9: Book 
 - Day10: pricing page
+- Day11: Parot
+- Day12-13: CRM app dashboard
+- Day14: Scrolling text effect
