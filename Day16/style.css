@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(216, 203, 83);
+}
+
+div {
+  position: relative;
+  margin:   10% 35%;
+  height: 40vh;
+  border-radius: 10px;
+
+  width: 30vw;
+  background: radial-gradient(circle at 80% 70%, white 2%, transparent 2%),
+    radial-gradient(
+      circle,
+      white 5%,
+      black 5% 14%,
+      rgb(82, 81, 81) 14% 20%,
+      rgb(122, 122, 122) 20% 26%,
+      black 26% 26.2%,
+      rgb(122, 122, 122) 26.2% 32%,
+      rgb(194, 192, 192) 32% 37%,
+      white 37% 45%,
+      transparent 45%
+    ),
+    linear-gradient(to top, white 15%, rgb(63, 62, 62) 15% 85%, white 85% 100%);
+}
+div:before {
+  content: "";
+  position: absolute;
+  width: 30vw;
+  height: 3vh;
+  top: -17px;
+  background:
+  linear-gradient(to bottom, rgb(216, 203, 83) 65% , transparent 65% ),
+  linear-gradient(to right,rgb(216, 203, 83) 10%, rgb(158, 158, 158) 10% 20% , rgb(216, 203, 83) 20% 75%,transparent 75% 90% ,rgb(216, 203, 83) 90%  ),
+  repeating-linear-gradient(to right ,white,white 2% , grey 2%,grey 2.3% );
+}
+
+div:after {
+    content: "";
+    position: absolute;
+    width:  8vw;
+    height: 6vh;
+    left: 11vw;
+    top: -6vh;
+    background: 
+    linear-gradient(to bottom , white 20% ,transparent 20%),
+    linear-gradient(to right , white 20% ,rgb(63, 62, 62) 20% 80% ,white 80%);
+   
+}
+    
