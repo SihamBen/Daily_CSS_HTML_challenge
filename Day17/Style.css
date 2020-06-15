@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --dark-blue:#2934D8;
+    --light-blue:rgb(84, 96, 202);
+    --light-grey:#E9ECF7;
+    --dark-grey:#B9C4E4;
+    --primary-orange:rgb(255, 101, 71);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 10px;
+    
+}
+i{
+    color: var(--light-blue);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+   
+}
+.container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 50%;
+height: 90%;
+}
+.screen-1,.screen-2{
+    height: 100%;
+    width: 40%;
+    border-radius:20px;
+    padding:25px 15px; 
+    box-shadow: 5px 2px 30px 3px  rgb(198, 198, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:var(--light-grey);
+}
+.header-1,.header-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-1>span{
+    width: 35px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-image: url(avatar.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.header-1>button ,.header-2>button{
+    float: right;
+    background: none; 
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+.header-1>button>i,.header-2>button>i{
+    width: 100%;
+    height: 100%;
+    font-size: 19px;
+    color:var(--primary-orange);
+    
+}
+h3{
+    font-size: 1.5em;
+    line-height: 2.3em;
+
+
+}
+h1{
+    font-size: 2.5em;
+    line-height: 2.7em;
+    font-weight: 900;
+}
+.greeting>h1 {
+    line-height:0;
+}
+.greeting>h1>img{
+width: 22px;
+height: 22px;
+}
+.searchbar{position: relative;
+}
+.searchbar>input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius:10px ;
+    padding: 15px 35px;
+}
+
+
+.searchbar>i{
+    position: absolute;
+    font-size: 15px;
+    left: 15px;
+    top: 30%;
+}
+
+
+.card{
+    
+    background-color:var(--light-blue);
+    color: white;
+    border-radius: 15px;
+    padding: 15px ;
+    position: relative;
+}
+.card>button{
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary-orange);
+    color: white;
+    font-size: 1.4em;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    line-height: 20px;
+    right: 0px;
+    top: -8px;
+}
+.card>button>i{
+    color: white;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+
+
+.services>div{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%;
+    gap: 5% 5%;
+    
+    
+}
+.services>div>div{
+    background: white;
+    border-radius: 5px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.services>div>div:nth-of-type(1){
+    background: var(--primary-orange);
+    color: white;
+   
+}
+.services>div>div:nth-of-type(1)>i{
+    color: white;
+
+}
+.services>div>div>i{
+    font-size: 1.5em;
+
+}
+.screen-2{
+    padding-bottom: 0;
+}
+
+.categories{
+   height: 91%;
+    overflow: hidden;
+
+}
+
+.category{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+
+}
+.category>div{
+    background: white;
+    border-radius: 5px;
+    padding: 15px 15px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.category>div>i{
+    font-size: 1.5em;
+}
+.doctors>h1>i{
+    font-size: 0.9em;
+    color: rgb(255, 217, 0);
+}
+.doctor>div{
+    background: white;
+    border-radius: 5px;
+    padding: 15px 15px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}
+.doctor>div>div:nth-of-type(2){
+    padding: 0 10px;
+    width: 65%;
+}
+.doctor-picture{
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+.female{
+    background-image: url(female_doctor.jpg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+.male{
+   
+    background-image: url(male_doctor.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
