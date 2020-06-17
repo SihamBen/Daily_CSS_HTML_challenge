@@ -141,6 +141,11 @@ height: 22px;
     margin: 0;
     
 }
+.card>button>i:active .card>button{
+    display: none;
+    visibility: hidden;
+}
+
 
 
 

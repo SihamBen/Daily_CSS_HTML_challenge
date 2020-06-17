@@ -1,0 +1,47 @@
+:root {
+  --pink: rgb(255, 129, 150);
+  --light-grey: rgb(173, 168, 168);
+  --dark-grey: rgb(133, 129, 129);
+}
+
+div {
+ font-size: 8px;
+  margin:10% 40%;
+  width: 26em;
+  height: 20em;
+  background: 
+  linear-gradient(to right, black 0 1em ,transparent 1em 8em , black 8em 9em)  5em 0 / 9em 1em,
+  linear-gradient(to bottom, white 0 1em , transparent 1em),
+  linear-gradient(to right, black 0 1em ,var(--light-grey) 1em 2em , black 2em 3em, transparent 3em 8em,black 8em 9em ,var(--light-grey) 9em 10em , black 10em 11em)  4em 1em / 11em 1em,
+  linear-gradient(to right, black 0 1em ,var(--light-grey) 1em 2em , var(--dark-grey) 2em 3em, black 3em 8em,var(--dark-grey) 8em 9em ,var(--light-grey) 9em 10em , black 10em 11em)  4em 2em / 11em 1em,
+  linear-gradient(to bottom, white 0 3em , transparent 3em),
+  linear-gradient(to right, black 0 1em ,var(--dark-grey) 1em 2em , var(--light-grey) 2em 4em,var(--dark-grey) 4em 9em,var(--dark-grey) 8em 9em ,var(--light-grey) 9em 11em , var(--dark-grey) 11em 12em,black 12em 13em)  3em 3em / 13em 1em,
+  linear-gradient(to right, black 0 1em ,var(--light-grey) 1em 12em,black 12em 13em)  3em 4em / 13em 1em,
+  linear-gradient(to bottom, white 0 4em , transparent 4em),
+  linear-gradient(to right,black 0 1em , var(--dark-grey) 1em 2em ,var(--light-grey) 2em 4em,black 4em 5em ,var(--light-grey) 5em 7em,black 7em 8em ,var(--light-grey) 8em 10em ,black 10em 11em ,var(--light-grey) 11em 13em , var(--dark-grey) 13em 14em , black 14em 15em ) 2em 5em /15em 1em,
+  linear-gradient(to right,black 0 1em , var(--light-grey) 1em 3em ,var(--pink) 3em 4em,var(--light-grey) 4em 6em ,black 6em 7em,var(--light-grey) 7em 8em,black 8em 9em ,var(--light-grey) 9em 11em ,var(--pink) 11em 12em ,var(--light-grey) 12em 14em , black 14em 15em ) 2em 6em /15em 1em,
+  linear-gradient(to right,black 0 1em , var(--light-grey) 1em 14em , black 14em 15em ) 2em 7em /15em 1em,
+  linear-gradient(to bottom , white 0 7em,transparent 7em ),
+  linear-gradient(to right,black 0 1em , var(--dark-grey) 1em 2em,var(--light-grey) 2em 16em , black 16em 17em ) 1em 8em /17em 2em,
+  linear-gradient(to right,black 0 1em ,var(--light-grey) 1em 15em , var(--dark-grey) 14em 16em, black 16em 17em, transparent 17em 22em , black 22em 24em  ) 1em 10em /24em  1em,
+  linear-gradient(to bottom , white 0 11em,transparent 11em ),
+  linear-gradient(to right,black 0 1em ,var(--dark-grey) 1em 3em ,var(--light-grey) 3em 18em,  black 18em 19em ,transparent 19em 22em , black 22em 23em ,var(--light-grey) 23em 25em ,black 25em ) 0em 11em /26em  1em,
+  linear-gradient(to bottom , white 0 12em,transparent 12em ),
+  linear-gradient(to right,black 0 1em ,var(--dark-grey) 1em 2em ,var(--light-grey) 2em 16em,var(--dark-grey)16em 18em , black 18em 19em ,transparent 19em 23em , black 23em 24em ,var(--dark-grey) 24em 25em ,black 25em ) 0em 12em /26em  1em,
+  linear-gradient(to bottom , white 0 13em,transparent 13em ),
+  linear-gradient(to right,black 0 1em ,var(--light-grey) 1em 17em,var(--dark-grey)17em 18em , black 18em 19em ,transparent 19em 23em , black 23em 24em ,var(--light-grey) 24em 25em ,black 25em ) 0em 13em /26em  1em,
+  linear-gradient(to bottom , white 0 14em,transparent 14em ),
+  linear-gradient(to right,black 0 1em ,var(--dark-grey) 1em 3em ,var(--light-grey) 3em 4em,black 4em 5em ,var(--light-grey) 5em 15em,black 15em 16em,var(--light-grey)16em 18em , black 18em 19em ,transparent 19em 23em , black 23em 24em ,var(--light-grey) 24em 25em ,black 25em 26em) 0em 14em /26em  1em,
+  linear-gradient(to bottom , white 0 15em,transparent 15em ),
+  linear-gradient(to right,black 0 1em ,var(--dark-grey) 1em 2em ,var(--light-grey) 2em 4em,black 4em 5em,var(--light-grey) 5em 6em,black 6em 7em,var(--light-grey) 7em 13em,black 13em 14em,var(--light-grey) 14em 15em,black 15em 16em,var(--light-grey)16em 18em , black 18em 19em ,transparent 19em 23em , black 23em 24em ,var(--light-grey) 24em 25em ,black 25em ) 0em 15em /26em  1em,
+  linear-gradient(to bottom , white 0 16em,transparent 16em ),
+  linear-gradient(to right,black 0 1em ,var(--dark-grey) 1em 2em ,var(--light-grey) 2em 4em,black 4em 5em,var(--light-grey) 5em 6em,black 6em 7em,var(--light-grey) 7em 13em,black 13em 14em,var(--light-grey) 14em 15em,black 15em 16em,var(--light-grey)16em 18em , black 18em 23em ,var(--light-grey) 23em 25em ,black 25em ) 0em 16em /26em  1em,
+  linear-gradient(to bottom , white 0 17em,transparent 17em ),
+  linear-gradient(to right,black 0em 1em ,var(--light-grey) 1em 2em ,var(--dark-grey) 2em 3em,black 3em 4em,var(--light-grey) 4em 5em,black 5em 6em,var(--light-grey) 6em 12em,black 12em 13em ,var(--light-grey) 13em 14em , black 14em 15em,var(--dark-grey) 15em 16em ,black 16em 17em, var(--light-grey) 17em 23em ,black 23em 24em) 1em 17em /24em  1em,
+  linear-gradient(to bottom , white 0 18em,transparent 18em ),
+  linear-gradient(to right,black 0em 3em ,var(--light-grey) 3em 4em,black 4em  12em ,var(--light-grey) 12em 13em , black 13em 22em ) 2em 18em /22em  1em,
+  linear-gradient(to top, white 0 0.5em,transparent 0.5em ),
+  linear-gradient(to right, black 0 3em ,transparent 3em 9em, black 9em 12em  ) 4em 19em /12em 1em
+  ;
+  background-repeat: no-repeat;
+}
