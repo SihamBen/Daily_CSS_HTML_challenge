@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity=""
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="menu">
+          <i class="fas fa-bars"></i></div>
+        <div class="header-right">
+          <div ><i class="fas fa-bell"></i></div>
+          <div id="avatar"></div>
+          <div>Siham Ben Daia  <i class="fas fa-angle-down"></i></div>
+        </div>
+      </header>
+      <aside class="sidenav">
+        <ul class="sidenav__list">
+            <li ><i class="fas fa-home"></i></li>
+            <li><i class="fas fa-users"></i></li>
+            <li ><i class="fas fa-calendar-alt"></i></li> 
+          </ul>
+      </aside>
+      <main class="main">
+          <div>
+              <h1>Dashboard</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, enim alias. Assumenda natus exercitationem, aspernatur dicta voluptatem fugit facilis eius vel in fugiat consequuntur, aut illo, fuga repellendus inventore facere?</p>
+          </div>
+
+
+          <div class="cards">
+              <div class="card">
+                  <h3>COLLEGES</h3>
+                  <div class="progress-bar"><svg  width="110" height="110">
+                    <defs>
+                    <radialGradient id="RadialGradient1">
+                        <stop offset="0%" stop-color="#26303f" />
+                        <stop offset="80%" stop-color="#26303f" />
+                        <stop offset="80% " stop-color="black" />
+                        <stop offset="100% " stop-color="black" />
+                      </radialGradient>
+                      <linearGradient id="RadialGradient2">
+                        <stop offset="0%" stop-color="rgb(48, 212, 136)" />
+                            
+                        <stop offset="50% " stop-color="rgb(253, 48, 117)" />
+                        <stop offset="75% " stop-color="rgb(206, 67, 206)" />
+                        <stop offset="100% " stop-color="orange" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="55" cy="55" r="50" fill="url(#RadialGradient1)" stroke-width="3" stroke="url(#RadialGradient2)"/>
+                    <text x="35" y="55" class="number">236</text>
+                    <text x="40" y="75" class="total">Total</text>
+                  </svg> </div>
+                  <ul class="status">
+                      <li>135 Approved</li>
+                      <li>14 Registered Today</li>
+                      <li>32 Waiting For Approval</li>
+                      <li>55 Rejected</li>
+                      </ul>
+            </div>
+              <div class="card">
+                  <h3>EVENTS</h3>
+                  <div class="progress-bar">
+                    <svg  width="110" height="110">
+                        <defs>
+                        
+                        <linearGradient id="RadialGradient3">
+                            <stop offset="0%" stop-color="rgb(48, 212, 136)" />
+                            
+                            <stop offset="50% " stop-color="rgb(253, 48, 117)" />
+                            <stop offset="75% " stop-color="rgb(206, 67, 206)" />
+                            <stop offset="100% " stop-color="orange" />
+                          </linearGradient>
+                        </defs>
+                        <circle cx="55" cy="55" r="50" fill="url(#RadialGradient1)" stroke-width="3" stroke="url(#RadialGradient3)"/>
+                         <text x="35" y="55" class="number">483</text>
+                          <text x="40" y="75" class="total">Total</text>
+                      </svg>  
+                    </div>
+                  <ul class="status">
+                      <li>306 Approved</li>
+                      <li>50 Registered Today</li>
+                      <li>25 Waiting For Approval</li>
+                      <li>102 Rejected</li>
+                  </ul>
+            </div>
+              <div class="more">
+                    <div> 
+                      <h2>48</h2>
+                      Job code pending for creation of events</div>
+                    <div>VIEW <i class="fas fa-arrow-right"></i></div>
+                </div>
+              </div>
+          </div>
+      </main>
+     
+    </div>
+   
+  </body>
+</html>

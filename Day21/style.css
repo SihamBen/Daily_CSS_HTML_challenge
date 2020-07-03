@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700|Source+Sans+Pro:300,400,600,700&display=swap");
+:root {
+  --black: #172124;
+  --dark-grey: #26303f;
+  --light-grey: #38465a;
+}
+html{background-color: var(--black);}
+* {
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  color: white;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.5m;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr; /* Side nav is hidden on mobile */
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+      'header'
+      'main';
+      height: 100vh;
+}
+
+
+.header {
+  grid-area: header;
+  background-color: var(--light-grey);
+  display: flex;
+  
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-right{
+  display: flex;
+  align-items: center;
+}
+.header-right > div {
+  margin: 0 0.5em;
+}
+#avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(avatar.jpg);
+  background-size: 170%;
+  background-position: 50% 0%;
+}
+
+.fa-bars{
+  font-size: 19px;
+  
+}
+.menu {
+  margin: 0 0.5em;
+}
+.fa-angle-down,
+.fa-bell {
+  padding: 0.5em;
+}
+
+.sidenav {
+
+  grid-area: sidenav;
+ 
+  background-color: var(--dark-grey);
+  display: none;
+}
+
+.sidenav__list > li {
+  list-style: none;
+  text-align: center;
+  padding: 1.3em;
+}
+.sidenav__list > li:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(243, 101, 243) 50%,
+    rgb(0, 204, 255) 100%
+  );
+}
+.sidenav__list > li > i {
+  font-size: 1.6em;
+}
+
+.main {
+  grid-area: main;
+  background-color: var(--black);
+  padding: 5% 4%;
+}
+.main > div:first-child {
+ 
+  margin-bottom: 2em;
+}
+.main > div:first-child > p {
+  line-height: 1.5em;
+}
+.cards {
+  display: flex;
+  flex-direction: column ;
+  height: 180px;
+}
+.card {
+  margin-bottom: 2em;
+  background: var(--dark-grey);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.5em 1fr;
+  grid-template-areas:
+    "title title"
+    "progress-bar status";
+    height: 100%;
+}
+.card > h3 {
+  grid-area: title;
+  background: var(--light-grey);
+  padding: 0.5em 1em;
+  align-self: stretch;
+}
+.progress-bar {
+  grid-area: progress-bar;
+  padding: 1em 0 1em 1.5em;
+  position: relative;
+}
+
+.number {
+  fill: white;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+.total {
+  fill: white;
+}
+
+.status {
+  grid-area: status;
+  align-self: stretch;
+  padding: 1em 1.5em 1em 1em;
+}
+.status > li {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  list-style: none;
+}
+.status li::before {
+  content: "\2022";
+  color: rgb(206, 67, 206);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.status > li:nth-child(2)::before {
+  color: rgb(48, 212, 136);
+}
+.status > li:nth-child(3)::before {
+  color: rgb(253, 48, 117);
+}
+.status > li:nth-child(4)::before {
+  color: orange;
+}
+.more {
+  
+  background: var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 170%;
+}
+
+.more > div:first-of-type {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.11);
+  flex-basis: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.more > div:nth-of-type(2) {
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-basis: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.more > div:nth-of-type(2) > i {
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+
+@media only screen and (min-width: 46.875em) {
+
+  .container {
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+      "header header"
+      "sidenav main";
+    height: 100vh;
+  }
+
+.sidenav {
+  display: flex;
+
+  justify-content: center;
+  
+}
+.cards{
+  width: 60%;
+  margin: auto;
+}
+.menu i{
+  display: none;
+}
+ 
+}
+
+
+@media only screen and (min-width: 65.625em) {
+  .main > div:first-child {
+    width: 50%;
+    margin-bottom: 2em;
+  }
+  .cards{
+    width: 100%;
+    margin: auto;
+  }
+.menu{
+  display: none;
+}
+.header{
+  justify-content: flex-end;
+}
+.card{
+  flex-basis: 38%;
+}
+.more{
+  flex-basis: 20%;
+}
+.cards {
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  height: 180px;
+}
+.more{
+  height: 180px;
+}
+
+}

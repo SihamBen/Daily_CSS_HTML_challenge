@@ -18,3 +18,6 @@ I challenged myself to create beautiful UI elements inspired by UI Design Daily 
 - Day15: One div book-shelf
 - Day 16: A single div camera
 - Day 17-18: A medical mobile app
+- Day 19: A single div pixel art kitten
+- Day 20: A reponsive web app
+- Day 21: Just another Dashboard
