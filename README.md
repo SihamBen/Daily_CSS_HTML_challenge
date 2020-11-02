@@ -22,3 +22,4 @@ I challenged myself to create beautiful UI elements inspired by UI Design Daily 
 - Day 20: A reponsive web app
 - Day 21: Just another Dashboard
 - Day 22:An outdoor activities website
+- Day 23: 3d animated card

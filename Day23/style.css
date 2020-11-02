@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: space-around;
+  justify-content: center;
+  perspective: 1000px;
+}
+.container {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+min-height: 100vh;
+}
+.card {
+  transform-style: preserve-3d;
+  height: 23rem;
+  width: 22rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.avatar{
+  background: rgb(180, 212, 253);
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+ 
+}
+.avatar>img{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  
+  
+
+}
+.avatar:before{
+  content: "PRO";
+  position: absolute;
+  left: 30%;
+  bottom: -8px;
+  padding: 0.1rem 0.5rem;
+  border-radius:  10px ;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(0, 132, 255);
+  z-index: 2;
+}
+.info1{
+text-align: center;
+}
+.info1>h1{
+  color: rgb(56, 55, 55);
+  font-size: 1.5rem;
+}
+.info1>h3{
+  color: grey;
+  font-size: 1rem;
+}
+.info2>h5{
+  color: grey;
+  font-size: 0.8rem;
+}
