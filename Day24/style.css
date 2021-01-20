@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background: repeating-linear-gradient(60deg,
+    #fb3 0 15px, #58a 0 30px)    
+}

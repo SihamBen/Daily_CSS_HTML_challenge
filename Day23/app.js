@@ -17,13 +17,13 @@ container.addEventListener("mousemove", (e) => {
 container.addEventListener("mouseenter", (e) => {
   card.style.transition = "none";
   avatar.style.transform = "translateZ(140px) rotateZ(-5deg)";  
-  info1.style.transform = "translateZ(75px)";
-  info2.style.transform = "translateZ(75px)";
+  info1.style.transform = "translateZ(95px)";
+  info2.style.transform = "translateZ(95px)";
 });
 //Animate Out
 container.addEventListener("mouseleave", (e) => {
   card.style.transition = "all 0.5s ease";
-  avatar.style.transition = "all 0.8s ease";
+  avatar.style.transition = "all 0.45 ease";
   info1.style.transition = "all 1s ease";
   info2.style.transition = "all 1.5s ease";
   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
